@@ -19,7 +19,8 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret set[count _ret,["U_Rangemaster","Cop Uniform",25]];
+		ret set[count _ret,["U_Rangemaster","Tenue de Recrue",0]];
+		player setObjectTextureGlobal [0,"textures\police_uniform_base.jpg"];
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret set[count _ret,["U_B_CombatUniform_mcam_tshirt",nil,350]];
